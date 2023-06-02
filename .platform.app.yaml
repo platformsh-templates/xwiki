@@ -15,6 +15,9 @@ mounts:
     '/server':
         source: local
         source_path: server_source
+    '/var/tmp':
+        source: local
+        source_path: tmp
 
 relationships:
     database: "db:postgresql"
